@@ -118,6 +118,8 @@ def main():
                     full_tokenizer=full_tokenizer, min_length=min_length)
         print('files built')
 
+    exit(0)
+
     if not args.pretrained_model:
         model = transformers.modeling_gpt2.GPT2LMHeadModel(config=model_config)
     else:
